@@ -1,0 +1,38 @@
+{
+    "type": "object",
+    "properties": {
+        "resourceGroupName": {
+            "required": true,
+            "type": "string"
+        },
+        "serverName": {
+            "required": true,
+            "type": "string"
+        },
+        "databaseName": {
+            "required": true,
+            "type": "string"
+        },
+        "subscriptionId": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "description": "Contains the information necessary to perform a create database restore point operation.",
+            "properties": {
+                "restorePointLabel": {
+                    "description": "The restore point label to apply",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "restorePointLabel"
+            ],
+            "type": "object"
+        },
+        "api_version": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}
